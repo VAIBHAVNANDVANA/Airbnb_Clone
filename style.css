@@ -1,0 +1,281 @@
+/* style.css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ff5a5f;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header form {
+    display: flex;
+    gap: 10px;
+}
+
+header input, header button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+header button {
+    background: #fff;
+    color: #ff5a5f;
+    cursor: pointer;
+}
+
+header button:hover {
+    background: #ddd;
+}
+
+main {
+    padding: 20px;
+}
+
+#properties-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.property-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.property-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.property-card .property-details {
+    padding: 10px;
+}
+
+.property-card .property-details h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.property-card .property-details p {
+    margin: 5px 0;
+    color: #777;
+}
+
+.property-card .property-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #f9f9f9;
+}
+
+.property-card .property-actions button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.property-card .property-actions button.like {
+    background: #ff5a5f;
+    color: #fff;
+}
+
+.property-card .property-actions button.book {
+    background: #008489;
+    color: #fff;
+}
+
+.property-card .property-actions button:hover {
+    opacity: 0.9;
+} */
+
+
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ff5a5f;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+header input, header button, header select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+header button {
+    background: #fff;
+    color: #ff5a5f;
+    cursor: pointer;
+}
+
+header button:hover {
+    background: #ddd;
+}
+
+#filters {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+main {
+    padding: 20px;
+}
+
+#properties-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.property-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.property-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.property-card .property-details {
+    padding: 10px;
+}
+
+.property-card .property-details h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.property-card .property-details p {
+    margin: 5px 0;
+    color: #777;
+}
+
+.property-card .property-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #f9f9f9;
+}
+
+.property-card .property-actions button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.property-card .property-actions button.like {
+    background: #ff5a5f;
+    color: #fff;
+}
+
+.property-card .property-actions button.book {
+    background: #008489;
+    color: #fff;
+}
+
+.property-card .property-actions button:hover {
+    opacity: 0.9;
+}
+
+#booking-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#booking-modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content h2 {
+    margin-top: 0;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal-content form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-content form button[type="submit"] {
+    background: #008489;
+    color: #fff;
+}
+
+.modal-content form button[type="button"] {
+    background: #ddd;
+    color: #000;
+}
+
+.modal-content form button:hover {
+    opacity: 0.9;
+}

@@ -1,0 +1,80 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Airbnb Clone</h1>
+        <form id="search-form">
+            <input type="text" id="search-location" placeholder="Location">
+            <input type="date" id="search-date">
+            <input type="number" id="search-price-min" placeholder="Min Price">
+            <input type="number" id="search-price-max" placeholder="Max Price">
+            <button type="submit">Search</button>
+        </form>
+    </header>
+    <main>
+        <div id="properties-list"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+ -->
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Airbnb Clone</h1>
+        <form id="search-form">
+            <input type="text" id="search-location" placeholder="Location">
+            <input type="date" id="search-date">
+            <input type="number" id="search-price-min" placeholder="Min Price">
+            <input type="number" id="search-price-max" placeholder="Max Price">
+            <button type="submit">Search</button>
+        </form>
+        <div id="filters">
+            <label for="sort">Sort by:</label>
+            <select id="sort">
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+            </select>
+            <label for="amenities">Filter by amenities:</label>
+            <select id="amenities" multiple>
+                <option value="Wi-Fi">Wi-Fi</option>
+                <option value="Pool">Pool</option>
+                <option value="Kitchen">Kitchen</option>
+                <option value="Heating">Heating</option>
+                <option value="Air Conditioning">Air Conditioning</option>
+            </select>
+        </div>
+    </header>
+    <main>
+        <div id="properties-list"></div>
+    </main>
+    <div id="booking-modal" class="hidden">
+        <div class="modal-content">
+            <h2>Book Property</h2>
+            <form id="booking-form">
+                <input type="date" id="booking-date" required>
+                <input type="number" id="booking-guests" placeholder="Number of Guests" required>
+                <button type="submit">Confirm Booking</button>
+                <button type="button" id="close-modal">Cancel</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
